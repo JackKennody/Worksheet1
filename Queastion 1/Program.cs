@@ -1,5 +1,7 @@
 ﻿namespace Queastion_1
 {/// <summary>
+/// Name : Jack Kennedy
+/// Date : 25 - 1 - 2023
 /// a)	Write a method called PrintIntegersFor which uses a for loop to print
 /// all the integers between 40 and 60 in ascending order to the console.
 /// b)	Write a second method called PrintIntegersWhile which does the same thing using a while loop.
