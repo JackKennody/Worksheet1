@@ -34,7 +34,7 @@
 
             for (i = 0; i < numbers.Length; i++)
             {
-                if ((numbers[i] % 2) == 0)
+                if ((numbers[i] % 2) != 0)
                 {
                     oddnumbers = oddnumbers + 1;
                 }
@@ -61,6 +61,8 @@
                 if (smallestNumber > numbers[i])
                     smallestNumber = numbers[i];
             }
+
+
             Console.WriteLine($"The smallest number you entered was {smallestNumber}");
 
             //find largest number
