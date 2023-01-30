@@ -28,7 +28,7 @@
             //PrintTriangleGeneral();
 
             Console.WriteLine("\nPart d");
-            //PrintTriangle();
+            PrintTriangleGeneralCharacter();
         }
         static void PrintTriangle() // part a
         {
@@ -65,7 +65,7 @@
             }
         }
 
-        static void PrintTriangleGeneral()
+        static void PrintTriangleGeneral() // part c
         {
             string hashtag = "#";
             int x = 0;
@@ -80,6 +80,29 @@
                 while (counter < x)
                 {
                     Console.Write(hashtag);
+                    counter++;
+                }
+                Console.Write($"\n");
+                x++;
+            }
+        }
+
+        static void PrintTriangleGeneralCharacter() // part d
+        {
+            int x = 0;
+
+            //user input
+            Console.Write($"{"Enter a character to fill your triangle", -40} : ");
+            string character = Console.ReadLine();
+            Console.Write($"{"Enter a number of rows for your triangle",-40} : ");
+            int i = int.Parse(Console.ReadLine());
+
+            while (i >= x)
+            {
+                int counter = 0;
+                while (counter < x)
+                {
+                    Console.Write(character);
                     counter++;
                 }
                 Console.Write($"\n");
